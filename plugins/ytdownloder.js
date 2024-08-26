@@ -30,7 +30,7 @@ await conn.sendmassage(from,{immage:{url: data.thumbnail},caption:desc},{quoted:
   //download audio
 let down = await fg.yta(url)
 let downloadurl = down.dl_url
-
+    
  //send audio msg 
 await conn.sendmassage(from,{audio:{url:downloadurl},mimetype:"audio/mpeg"},{quoted:mek})
 await conn.sendmassage(from,{document:{url:downloadurl},mimetype:"audio/mpeg",fileName:data.title + ".mp3".caption:"powerd by ✨METHUKA-MD✨yt downloader_____💻-methuka nisalitha"},{quoted:mek})
@@ -38,7 +38,7 @@ await conn.sendmassage(from,{document:{url:downloadurl},mimetype:"audio/mpeg",fi
 console.log(e)
   reply('${e}')
 }
-}}
+})
 
 
 
@@ -81,5 +81,5 @@ await conn.sendmassage(from,{document:{url:downloadurl},mimetype:"video/mp4",fil
 console.log(e)
   reply('${e}')
 }
-}}
+})
 
